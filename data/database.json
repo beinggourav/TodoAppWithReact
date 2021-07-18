@@ -1,0 +1,26 @@
+{
+    "UItasks":[
+        {
+            "title": "First task",
+            "details": "This is my first task",
+            "id": 1
+        },
+        {
+            "title": "Second task",
+            "details": "This is my second task",
+            "id": 2
+        }
+    ],
+    "NUItasks":[
+        {
+            "title": "First task UI",
+            "details": "This is my first task",
+            "id": 1
+        },
+        {
+            "title": "Second task NUI",
+            "details": "This is my second task",
+            "id": 2
+        }
+    ]
+}
