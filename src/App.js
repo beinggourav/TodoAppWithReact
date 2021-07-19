@@ -6,7 +6,7 @@ import UrgentImportant from './components/UrgentImportant';
 
 // to start app
 // npm start  (make sure you are in todo-app folder(in terminal))
-
+// npx json-server --watch data/database.json --port 8000 (to wath over the json server for data)
 
 // for deploy to github pages:
 // npm install gh-pages --save-dev    
@@ -22,10 +22,10 @@ function App() {
             <Route exact path = "/TodoAppWithReact">
               <Home />
             </Route>
-            <Route exact path="/TodoAppWithReact/urgentImportant">
+            <Route  exact path="/TodoAppWithReact/urgentImportant">
               <UrgentImportant />
             </Route>
-            <Route path ="/TodoAppWithReact/urgentImportant/:id">
+            <Route path ="/TodoAppWithReact/:category/:id">
               <TaskDetails />
             </Route>
           </Switch>

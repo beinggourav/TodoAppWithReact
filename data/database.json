@@ -1,5 +1,5 @@
 {
-    "UItasks":[
+    "urgentImportant":[
         {
             "title": "First task",
             "details": "This is my first task",
@@ -11,7 +11,7 @@
             "id": 2
         }
     ],
-    "NUItasks":[
+    "notUrgentImportant":[
         {
             "title": "First task UI",
             "details": "This is my first task",

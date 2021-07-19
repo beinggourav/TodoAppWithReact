@@ -13,24 +13,23 @@ const useFetch = (url)=>{
         fetch(url, {signal: abortCont.signal})       // using url and not hardcoding so that we can use it anywhere else also
         .then(res=>{
             if(!res.ok){
-                throw Error('Could not fetch the data'); 
+                throw Error('Could not fetch the data');
             }
             return res.json();                  
         })
-        .then(data=>{                               
-            setData(data);                         
+        .then(data=>{
+            setData(data);   
             setLoading(false);
             setError(null);
         })
-        .catch((err)=>{     
+        .catch((err)=>{
             if(err.name==='AbortError'){    // once the fetching is aborted it will catch error of aborting and will try to change the state, to save from this we use conditional catch here
                 console.log('fetch aborted');
             }else{
                 setError(err.message); 
                 setLoading(false); 
-            }   
+            }
         });
-
         return ()=> abortCont.abort();
     },[url]);
 

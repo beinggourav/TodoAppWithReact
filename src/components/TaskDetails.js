@@ -1,10 +1,23 @@
+import { useParams } from "react-router-dom";
+import useFetch from "./useFetch";
+
 const TaskDetails = () => {
-    console.log("Taskdetail");
+
+    const { category, id } = useParams();
+    console.log(category);
+    const { data: task, isLoading, error } = useFetch("http://localhost:8001/" + category + "/" + id);
     return (
         <div className="task-details">
-            <h2>hey</h2>
+            {error && <div>{error}</div>}
+            {isLoading && <div>Loading</div>}
+            {task && (
+                <article>
+                    <h2>{task.title}</h2>
+                    <p>{task.details}</p>
+                </article>
+            )}
         </div>
     );
 }
- 
+
 export default TaskDetails;

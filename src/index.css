@@ -88,3 +88,13 @@
 .preview a{
   text-decoration: none;
 }
+
+/* task-details */
+.task-details h2{
+  font-size: 20px;
+  color:#f1356d;
+  margin-bottom: 10px;
+}
+.task-details div{
+  margin: 20px 0;
+}

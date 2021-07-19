@@ -14,5 +14,5 @@ const TaskList = ({tasks, category, title}) => {
         </div>
     );
 }
- 
+
 export default TaskList;
