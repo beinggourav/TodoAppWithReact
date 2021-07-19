@@ -3,6 +3,8 @@ import Home from './components/home';
 import Navbar from './components/navbar';
 import TaskDetails from './components/TaskDetails';
 import Quadrant from './components/Quadrant';
+import Create from './components/Create';
+import Heading from './components/Heading';
 
 // to start app
 // npm start  (make sure you are in todo-app folder(in terminal))
@@ -23,9 +25,15 @@ function App() {
               <Home />
             </Route>
             <Route  exact path="/TodoAppWithReact/:quadrant">
+              <Heading />
               <Quadrant />
             </Route>
-            <Route path ="/TodoAppWithReact/:category/:id"> {/* Not working when I am using quadrant in place of category */}
+            <Route  exact path = "/TodoAppWithReact/:quadrant/create">
+              <Heading />
+              <Create />
+            </Route>
+            <Route  path ="/TodoAppWithReact/:quadrant/:id">
+              <Heading />
               <TaskDetails />
             </Route>
           </Switch>

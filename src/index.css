@@ -75,7 +75,7 @@
 .preview{
   padding: 10px 16px;
   margin: 20px 0;
-  border-bottom: 1px solid #fafafa;
+  border-bottom: 1px solid #f8eeee;
 }
 .preview h2{
   font-size: 20px;
@@ -88,13 +88,77 @@
 .preview a{
   text-decoration: none;
 }
+/* .nav{
+  display: flex;
+} */
+.add-task-btn a{
+  text-decoration: none;
+  background-color: #f1356d;
+  color: white;
+  border-radius: 8px;
+  padding: 5px;
+}
 
 /* task-details */
 .task-details h2{
   font-size: 20px;
   color:#f1356d;
+  margin: 10px 0px;
+}
+.task-details button{
+  background: #f1356d;
+  color: white;
+  border: 0;
+  padding: 8px;
+  margin: 20px 10px 0px 0px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Create Task */
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.create input, .create textarea {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.create button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Heading.js */
+.heading{
+  display: flex;
   margin-bottom: 10px;
 }
-.task-details div{
-  margin: 20px 0;
+.heading button{
+  font-size: 16px;
+  margin-left: auto;
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px 20px;
+  border-radius: 8px;
+  cursor: pointer;
 }

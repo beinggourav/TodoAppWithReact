@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 
-// creating hook(starts with use)
 const useFetch = (url)=>{
 
     const [data, setData] = useState(null);
