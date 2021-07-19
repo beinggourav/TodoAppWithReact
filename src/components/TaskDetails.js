@@ -4,7 +4,6 @@ import useFetch from "./useFetch";
 const TaskDetails = () => {
 
     const { category, id } = useParams();
-    console.log(category);
     const { data: task, isLoading, error } = useFetch("http://localhost:8001/" + category + "/" + id);
     return (
         <div className="task-details">

@@ -13,7 +13,7 @@
     ],
     "notUrgentImportant":[
         {
-            "title": "First task UI",
+            "title": "First task NUI",
             "details": "This is my first task",
             "id": 1
         },
@@ -21,6 +21,16 @@
             "title": "Second task NUI",
             "details": "This is my second task",
             "id": 2
+        }
+    ],
+    "urgentNotImportant":[
+        {
+
+        }
+    ],
+    "notUrgentNotImportant":[
+        {
+
         }
     ]
 }

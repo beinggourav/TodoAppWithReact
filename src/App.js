@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './components/home';
 import Navbar from './components/navbar';
 import TaskDetails from './components/TaskDetails';
-import UrgentImportant from './components/UrgentImportant';
+import Quadrant from './components/Quadrant';
 
 // to start app
 // npm start  (make sure you are in todo-app folder(in terminal))
@@ -22,10 +22,10 @@ function App() {
             <Route exact path = "/TodoAppWithReact">
               <Home />
             </Route>
-            <Route  exact path="/TodoAppWithReact/urgentImportant">
-              <UrgentImportant />
+            <Route  exact path="/TodoAppWithReact/:quadrant">
+              <Quadrant />
             </Route>
-            <Route path ="/TodoAppWithReact/:category/:id">
+            <Route path ="/TodoAppWithReact/:category/:id"> {/* Not working when I am using quadrant in place of category */}
               <TaskDetails />
             </Route>
           </Switch>
