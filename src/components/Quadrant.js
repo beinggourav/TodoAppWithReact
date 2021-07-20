@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import TaskList from "./TaskList"
+import TaskList from "./TaskList";
 import useFetch from "./useFetch";
 
 const Quadrant = () => {

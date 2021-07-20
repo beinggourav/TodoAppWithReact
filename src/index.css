@@ -88,9 +88,10 @@
 .preview a{
   text-decoration: none;
 }
-/* .nav{
-  display: flex;
-} */
+
+.add-task-btn{
+  margin-bottom: 15px;
+}
 .add-task-btn a{
   text-decoration: none;
   background-color: #f1356d;

@@ -24,7 +24,9 @@ const TaskDetails = () => {
                     <h2>{task.title}</h2>
                     <p><b>Description:</b> {task.details}</p>
                     <button onClick={handleDelete}>Delete Task</button>
-                    <button>Mark as Complete</button>
+                    <button onClick={()=>{
+                        task.isComplete = true;
+                    }}>Mark as Complete</button>
                 </article>
             )}
         </div>

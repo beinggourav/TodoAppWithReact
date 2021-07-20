@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useHistory, useParams } from "react-router-dom";
 
+// const isComplete = false;
+
 const Create = () => {
 
     const {quadrant} = useParams();
@@ -8,12 +10,13 @@ const Create = () => {
     // using hook useState so that we can update the values in dom and add to database
     const [title, setTitle] = useState('');
     const [details, setDetails] = useState('');
+    const [isComplete, setComplete] = useState(false);
     const [isAdding, setIsAdding] = useState(false);
     const history = useHistory();
 
     const handleSubmit=(e)=>{
         e.preventDefault();
-        const task = {title, details};
+        const task = {title, details, isComplete};
 
         setIsAdding(true);
         fetch("http://localhost:8001/" + quadrant, {
@@ -50,3 +53,4 @@ const Create = () => {
 }
 
 export default Create;
+export {}

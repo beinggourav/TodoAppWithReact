@@ -1,45 +1,46 @@
 {
   "urgentImportant": [
     {
-      "title": "Second task",
-      "details": "This is my second task",
+      "title": "Todo App Using React",
+      "details": "Make a Todo app with Eisenhower implementation, Using React",
+      "isComplete": false,
+      "id": 1
+    },
+    {
+      "title": "Watch Naruto",
+      "details": "Watch 313th episode",
+      "isComplete": false,
       "id": 2
-    },
-    {
-      "title": "Third task",
-      "details": "complete the todo task",
-      "id": 3
-    },
-    {
-      "title": "tir",
-      "details": "22",
-      "id": 4
     }
   ],
   "notUrgentImportant": [
     {
       "title": "First task NUI",
-      "details": "This is my first task",
+      "details": "First Not urgent Important task",
+      "isComplete": false,
       "id": 1
     }
   ],
   "urgentNotImportant": [
     {
-      "title": "first again",
-      "details": "ddd",
+      "title": "First task UNI",
+      "details": "First Urgent Not Important task",
+      "isComplete": false,
       "id": 1
-    },
-    {
-      "title": "ff",
-      "details": "ff",
-      "id": 2
     }
   ],
   "notUrgentNotImportant": [
     {
-      "title": "ee",
-      "details": "ee",
+      "title": "First task NUNI",
+      "details": "First NUNI task here",
+      "isComplete": false,
       "id": 1
+    },
+    {
+      "title": "Second NUNI",
+      "details": "This is 2nd NUNI task, You should delete it",
+      "isComplete": false,
+      "id": 2
     }
   ]
 }

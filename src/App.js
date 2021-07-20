@@ -1,3 +1,8 @@
+
+// to start app, run below command:
+// npm start  (make sure you are in todo-app folder(in terminal))
+// npx json-server --watch data/database.json --port 8001 (to wath over the json server for data)
+
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './components/home';
 import Navbar from './components/navbar';
@@ -6,9 +11,6 @@ import Quadrant from './components/Quadrant';
 import Create from './components/Create';
 import Heading from './components/Heading';
 
-// to start app
-// npm start  (make sure you are in todo-app folder(in terminal))
-// npx json-server --watch data/database.json --port 8000 (to wath over the json server for data)
 
 // for deploy to github pages:
 // npm install gh-pages --save-dev    
