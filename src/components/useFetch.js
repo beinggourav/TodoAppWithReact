@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+//A Custom Hook
 const useFetch = (url)=>{
 
     const [data, setData] = useState(null);
@@ -11,7 +12,7 @@ const useFetch = (url)=>{
 
         fetch(url, {signal: abortCont.signal})       // using url and not hardcoding so that we can use it anywhere else also
         .then(res=>{
-            if(!res.ok){
+            if(!res.ok){                            // for other error
                 throw Error('Could not fetch the data');
             }
             return res.json();                  
@@ -21,7 +22,7 @@ const useFetch = (url)=>{
             setLoading(false);
             setError(null);
         })
-        .catch((err)=>{
+        .catch((err)=>{                     // catching any type of network error
             if(err.name==='AbortError'){    // once the fetching is aborted it will catch error of aborting and will try to change the state, to save from this we use conditional catch here
                 console.log('fetch aborted');
             }else{
@@ -29,7 +30,7 @@ const useFetch = (url)=>{
                 setLoading(false); 
             }
         });
-        return ()=> abortCont.abort();
+        return ()=> abortCont.abort();      // abort the fetching when component changes quickely
     },[url]);
 
     return {data, isLoading, error};// returning object(or array) so that we can use them in diff file by useFetch

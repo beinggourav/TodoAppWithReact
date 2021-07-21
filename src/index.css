@@ -11,7 +11,6 @@
   text-align: center;
   padding: 20px;
   margin: 0 auto;
-  /* max-width: 900px; */
   border-bottom: 2px solid #f2f2f2;
 }
 .navbar h1{
@@ -26,6 +25,7 @@
   margin: 30px auto;
 }
 
+/* Home */
 .cards{
   display: flex;
   flex-wrap: wrap;
@@ -71,6 +71,7 @@
   color: green;
 }
 
+
 /* Task-List */
 .preview{
   padding: 10px 16px;
@@ -99,6 +100,10 @@
   border-radius: 8px;
   padding: 5px;
 }
+.completed h3{
+  margin-top: 10px;
+}
+
 
 /* task-details */
 .task-details h2{
@@ -163,3 +168,4 @@
   border-radius: 8px;
   cursor: pointer;
 }
+

@@ -7,16 +7,16 @@
       "id": 1
     },
     {
-      "title": "Watch Naruto",
-      "details": "Watch 313th episode",
+      "title": "Watch Naruto Shippuden",
+      "details": "Episode-320",
       "isComplete": false,
       "id": 2
     }
   ],
   "notUrgentImportant": [
     {
-      "title": "First task NUI",
-      "details": "First Not urgent Important task",
+      "title": "First NUI task",
+      "details": "No emergency, you can do it later!",
       "isComplete": false,
       "id": 1
     }
@@ -24,7 +24,7 @@
   "urgentNotImportant": [
     {
       "title": "First task UNI",
-      "details": "First Urgent Not Important task",
+      "details": "Can be handed over to another person",
       "isComplete": false,
       "id": 1
     }
@@ -33,14 +33,8 @@
     {
       "title": "First task NUNI",
       "details": "First NUNI task here",
-      "isComplete": false,
+      "isComplete": true,
       "id": 1
-    },
-    {
-      "title": "Second NUNI",
-      "details": "This is 2nd NUNI task, You should delete it",
-      "isComplete": false,
-      "id": 2
     }
   ]
 }

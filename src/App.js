@@ -4,8 +4,8 @@
 // npx json-server --watch data/database.json --port 8001 (to wath over the json server for data)
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './components/home';
-import Navbar from './components/navbar';
+import Home from './components/Home';
+import Navbar from './components/Navbar';
 import TaskDetails from './components/TaskDetails';
 import Quadrant from './components/Quadrant';
 import Create from './components/Create';

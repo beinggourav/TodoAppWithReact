@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useHistory, useParams } from "react-router-dom";
 
-// const isComplete = false;
 
 const Create = () => {
 
@@ -53,4 +52,3 @@ const Create = () => {
 }
 
 export default Create;
-export {}
