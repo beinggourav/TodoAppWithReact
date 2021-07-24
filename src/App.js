@@ -1,7 +1,7 @@
 
-// to start app, run below command:
+// to start app, run below commands:
 // npm start  (make sure you are in todo-app folder(in terminal))
-// npx json-server --watch data/database.json --port 8001 (to wath over the json server for data)
+// npx json-server --watch data/database.json --port 8001 (to watch over the json server for data)
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './components/Home';

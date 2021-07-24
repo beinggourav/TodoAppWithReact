@@ -35,6 +35,12 @@
       "details": "First NUNI task here",
       "isComplete": true,
       "id": 1
+    },
+    {
+      "title": "Second NUNI",
+      "details": "Dattebayo!",
+      "isComplete": false,
+      "id": 2
     }
   ]
 }
