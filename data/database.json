@@ -3,7 +3,7 @@
     {
       "title": "Todo App Using React",
       "details": "Make a Todo app with Eisenhower implementation, Using React",
-      "isComplete": false,
+      "isComplete": true,
       "id": 1
     },
     {
